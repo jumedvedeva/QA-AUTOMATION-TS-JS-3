@@ -1,0 +1,31 @@
+{
+  "exclude": ["./dist/**/*", "./node_modules/**/*"],
+  "include": ["./src/**/*"],
+  "compileOnSave": false,
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "lib": ["DOM", "ES2020", "esnext"],
+    "module":  "CommonJS", 
+    "noFallthroughCasesInSwitch": true,
+    "rootDir": "./src",
+    "outDir": "./dist/out-tsc",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ESNext",
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node"],
+    "noImplicitAny": false,
+    "noImplicitOverride": true,
+    "strict": true
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+ }
